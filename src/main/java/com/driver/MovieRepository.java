@@ -46,6 +46,7 @@ public class MovieRepository {
         if(dbMovieDirectorPair.containsKey(directorName)){
             return dbMovieDirectorPair.get(directorName);
         }
+        return new ArrayList<>();
     }
 
     public List<String> findAllMovies() {
